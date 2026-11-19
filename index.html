@@ -1,219 +1,46 @@
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>One Little Joy – Datenschutzerklärung / Privacy Policy</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-  :root { --sky:#EEF5FC; --rose:#FBD9E3; --ink:#24324A; --soft:#5B6A82; --card:#fff; --dot:#BFD9F2; }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--sky); color: var(--ink);
-    font: 16px/1.65 Nunito, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1, h2 { font-family: Comfortaa, Nunito, sans-serif; }
-  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; }
-  h2 { font-size: 1.2rem; margin: 28px 0 8px; }
-  .logo { width: 56px; height: 56px; border-radius: 15px; background: var(--dot); position: relative; margin-bottom: 14px; }
-  .logo::before { content:""; position:absolute; inset: 14px; border-radius: 50%; background: var(--rose); }
-  .logo::after { content:""; position:absolute; inset: 21px; border-radius: 50%; background: #FFF6C9; }
-  .lang { display: flex; gap: 8px; margin: 16px 0 24px; flex-wrap: wrap; }
-  .lang a {
-    color: var(--ink); text-decoration: none; font-weight: 700;
-    border-radius: 999px; padding: 6px 16px; background: var(--card);
-  }
-  section.card { background: var(--card); border-radius: 24px; padding: 8px 24px 24px; margin-bottom: 32px; }
-  .box { background: var(--rose); border-radius: 16px; padding: 4px 18px 10px; }
-  .meta { color: var(--soft); font-size: .9rem; }
-  a { color: #3D6FA8; }
-  ul { padding-left: 1.2em; }
-  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
-  td, th { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid var(--sky); }
-</style>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="One Little Joy">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="onelittlejoy">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>onelittlejoy</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-<main>
-  <div class="logo" aria-hidden="true"></div>
-  <h1>One Little Joy</h1>
-  <div class="meta">Stand / Last updated: 18.11.2026</div>
-  <nav class="lang"><a href="#de">Deutsch</a><a href="#en">English</a><a href="#loeschen">Konto löschen / Delete account</a></nav>
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
 
-  <!-- ============================ DEUTSCH ============================ -->
-  <section class="card" id="de" lang="de">
-    <h1 style="font-size:1.5rem;margin-top:16px">Datenschutzerklärung</h1>
-
-    <h2>Kurz gesagt</h2>
-    <p>Mit One Little Joy teilst du jeden Tag einen schönen Moment mit den Menschen,
-    mit denen du dich verbunden hast. Deine Momente sehen <strong>nur du und die
-    Menschen, für die du sie freigibst</strong>. Es gibt <strong>keine Werbung, keine
-    Analyse- oder Tracking-Tools</strong> und wir verkaufen keine Daten.</p>
-
-    <h2>Verantwortliche</h2>
-    <p>Andrea Grillmayer – AG Apps<br>Anton Bruckner Str. 17<br>3550 Langenlois, Österreich<br>
-    E-Mail: <a href="mailto:agappsat@gmail.com">agappsat@gmail.com</a></p>
-
-    <h2>Welche Daten verarbeitet werden</h2>
-    <table>
-      <tr><th>Daten</th><th>Wozu</th></tr>
-      <tr><td>Anmeldung mit Google oder Apple: eine zufällige Nutzer-ID, deine E-Mail-Adresse</td>
-          <td>Damit du dich anmelden kannst und deine Momente auf jedem Gerät da sind.</td></tr>
-      <tr><td>Dein Name (den du selbst eingibst)</td>
-          <td>Damit deine verbundenen Menschen sehen, von wem ein Moment ist.</td></tr>
-      <tr><td>Deine Momente (Text, Tag, für wen sichtbar), dein Hinweis „erzähl ich dir noch“, Emoji-Reaktionen</td>
-          <td>Kernfunktion der App: Momente speichern und mit deinen Menschen teilen.</td></tr>
-      <tr><td>Verbindungen zu anderen Menschen, Einladungs- und Geschenkcodes samt Nachricht</td>
-          <td>Damit ihr euch verbinden und Geschenke einlösen könnt.</td></tr>
-      <tr><td>Private Einstellungen: Spitznamen und Farben, die du deinen Menschen gibst</td>
-          <td>Nur für dich sichtbar, damit sie auf allen deinen Geräten gleich sind.</td></tr>
-      <tr><td>Kauf- und Abo-Status (gekauftes Produkt, Laufzeit; keine Zahlungsdaten)</td>
-          <td>Damit die App weiß, ob dein Zugang freigeschaltet ist.</td></tr>
-    </table>
-    <p><strong>Nur auf deinem Gerät</strong> bleiben: Lesezeichen „Darüber reden wir noch“,
-    Erinnerungszeiten, Farbwelt und Sprache.</p>
-
-    <h2>Diktieren</h2>
-    <p>Wenn du die Diktierfunktion nutzt, verwendet die App die Spracherkennung deines
-    Betriebssystems (Android bzw. iOS). Die Aufnahme wird nicht von uns gespeichert oder
-    an uns übertragen. Je nach Gerät und Einstellungen kann die Spracherkennung von
-    Google bzw. Apple verarbeitet werden; dafür gelten deren Datenschutzbestimmungen.
-    Gespeichert wird nur der Text, den du am Ende sicherst.</p>
-
-    <h2>Dienstleister</h2>
-    <ul>
-      <li><strong>Google Firebase</strong> (Google Ireland Ltd.) – Anmeldung, Datenbank und
-        Server-Funktionen. Speicherort der Datenbank: Europa; Server-Funktionen: Frankfurt.</li>
-      <li><strong>RevenueCat, Inc.</strong> (USA) – Verwaltung von Abos und Käufen. Übermittelt
-        werden nur die zufällige Nutzer-ID und Kaufdaten aus dem Store. Grundlage:
-        EU-Standardvertragsklauseln bzw. EU-US Data Privacy Framework.</li>
-      <li><strong>Google Play / Apple App Store</strong> – Abwicklung der Zahlung. Deine
-        Zahlungsdaten sehen wir nie.</li>
-    </ul>
-
-    <h2>Rechtsgrundlage</h2>
-    <p>Die Verarbeitung ist zur Erfüllung des Nutzungsvertrags nötig (Art. 6 Abs. 1 lit. b DSGVO).
-    Den Schutz vor Missbrauch (z. B. geprüfte Käufe) stützen wir auf unser berechtigtes Interesse
-    (Art. 6 Abs. 1 lit. f DSGVO).</p>
-
-    <h2>Wie lange</h2>
-    <p>Deine Daten bleiben gespeichert, bis du dein Konto löschst. Einladungscodes laufen nach
-    48 Stunden ab. Abmelden löscht die Kopie auf dem Handy, nicht dein Konto.</p>
-
-    <h2 id="loeschen">Konto und Daten löschen</h2>
-    <div class="box">
-      <p><strong>In der App:</strong> Einstellungen → Konto → <em>Konto löschen</em>.
-      Dabei werden sofort und endgültig gelöscht: dein Profil, alle deine Momente, deine
-      Reaktionen bei anderen, deine Verbindungen, Einladungen und privaten Einstellungen,
-      dein Anmelde-Konto sowie deine Kundendaten bei RevenueCat.</p>
-      <p><strong>Ohne App:</strong> Schreib eine E-Mail an
-      <a href="mailto:agappsat@gmail.com?subject=One%20Little%20Joy%20-%20Konto%20l%C3%B6schen">agappsat@gmail.com</a>
-      mit dem Betreff „Konto löschen“ von der E-Mail-Adresse, mit der du angemeldet bist.
-      Wir löschen dein Konto innerhalb von 30 Tagen.</p>
-      <p>Ein noch nicht eingelöstes Geschenk bleibt für die beschenkte Person einlösbar
-      (ohne deinen Namen mit dir zu verbinden). Ein laufendes Abo kündigst du bitte selbst
-      im Play Store bzw. App Store – das Löschen des Kontos beendet es nicht.</p>
-    </div>
-
-    <h2>Deine Rechte</h2>
-    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
-    Datenübertragbarkeit und Widerspruch. Schreib uns dazu einfach eine E-Mail. Du kannst dich
-    außerdem bei der Österreichischen Datenschutzbehörde (<a href="https://www.dsb.gv.at">dsb.gv.at</a>)
-    beschweren.</p>
-
-    <h2>Kinder</h2>
-    <p>Die App richtet sich an Menschen ab 16 Jahren. Jüngere nutzen sie bitte nur mit
-    Einverständnis ihrer Eltern.</p>
-
-    <h2>Änderungen</h2>
-    <p>Wenn sich die App ändert, passen wir diese Erklärung an. Das Datum oben zeigt den aktuellen Stand.</p>
-  </section>
-
-  <!-- ============================ ENGLISH ============================ -->
-  <section class="card" id="en" lang="en">
-    <h1 style="font-size:1.5rem;margin-top:16px">Privacy Policy</h1>
-
-    <h2>In short</h2>
-    <p>One Little Joy lets you share one happy moment a day with the people you have
-    connected with. Your moments are visible <strong>only to you and the people you share
-    them with</strong>. There are <strong>no ads, no analytics or tracking tools</strong>, and
-    we never sell data.</p>
-
-    <h2>Controller</h2>
-    <p>Andrea Grillmayer – AG Apps<br>Anton Bruckner Str. 17<br>3550 Langenlois, Austria<br>
-    Email: <a href="mailto:agappsat@gmail.com">agappsat@gmail.com</a></p>
-
-    <h2>What data is processed</h2>
-    <table>
-      <tr><th>Data</th><th>Why</th></tr>
-      <tr><td>Sign-in with Google or Apple: a random user ID, your email address</td>
-          <td>So you can sign in and your moments are there on every device.</td></tr>
-      <tr><td>Your name (entered by you)</td>
-          <td>So your people can see who a moment is from.</td></tr>
-      <tr><td>Your moments (text, day, who can see it), your “I'll tell you later” flag, emoji reactions</td>
-          <td>The core of the app: saving moments and sharing them with your people.</td></tr>
-      <tr><td>Connections, invite and gift codes including their message</td>
-          <td>So you can connect and redeem gifts.</td></tr>
-      <tr><td>Private settings: nicknames and colours you give your people</td>
-          <td>Visible only to you, synced across your devices.</td></tr>
-      <tr><td>Purchase and subscription status (product, term; no payment details)</td>
-          <td>So the app knows whether your access is unlocked.</td></tr>
-    </table>
-    <p><strong>Stored only on your device:</strong> “Let's talk about this” bookmarks, reminder
-    times, colour theme and language.</p>
-
-    <h2>Dictation</h2>
-    <p>Dictation uses your operating system's speech recognition (Android or iOS). We do not
-    store or receive the audio. Depending on your device and settings, speech may be processed
-    by Google or Apple under their privacy terms. Only the text you save is stored.</p>
-
-    <h2>Service providers</h2>
-    <ul>
-      <li><strong>Google Firebase</strong> (Google Ireland Ltd.) – sign-in, database and server
-        functions. Database location: Europe; server functions: Frankfurt.</li>
-      <li><strong>RevenueCat, Inc.</strong> (USA) – subscription and purchase management. Only the
-        random user ID and store purchase data are shared, based on EU Standard Contractual
-        Clauses / the EU-US Data Privacy Framework.</li>
-      <li><strong>Google Play / Apple App Store</strong> – payment processing. We never see your
-        payment details.</li>
-    </ul>
-
-    <h2>Legal basis</h2>
-    <p>Processing is necessary to provide the service (Art. 6(1)(b) GDPR). Fraud prevention, such
-    as verifying purchases, is based on our legitimate interest (Art. 6(1)(f) GDPR).</p>
-
-    <h2>Retention</h2>
-    <p>Your data is kept until you delete your account. Invite codes expire after 48 hours.
-    Signing out removes the copy on your phone, not your account.</p>
-
-    <h2 id="delete">Deleting your account and data</h2>
-    <div class="box">
-      <p><strong>In the app:</strong> Settings → Account → <em>Delete account</em>. This immediately
-      and permanently deletes your profile, all your moments, your reactions on others' moments,
-      your connections, invites and private settings, your sign-in account and your customer
-      record at RevenueCat.</p>
-      <p><strong>Without the app:</strong> email
-      <a href="mailto:agappsat@gmail.com?subject=One%20Little%20Joy%20-%20Delete%20account">agappsat@gmail.com</a>
-      with the subject “Delete account” from the address you signed in with. We will delete your
-      account within 30 days.</p>
-      <p>A gift that has not been redeemed yet stays redeemable for the recipient (without
-      connecting them to you). Please cancel a running subscription yourself in the Play Store or
-      App Store – deleting your account does not end it.</p>
-    </div>
-
-    <h2>Your rights</h2>
-    <p>You have the right to access, rectification, erasure, restriction, data portability and
-    objection. Just send us an email. You may also lodge a complaint with the Austrian Data
-    Protection Authority (<a href="https://www.dsb.gv.at">dsb.gv.at</a>).</p>
-
-    <h2>Children</h2>
-    <p>The app is intended for people aged 16 and over. Younger people should only use it with
-    their parents' consent.</p>
-
-    <h2>Changes</h2>
-    <p>If the app changes, we will update this policy. The date at the top shows the current version.</p>
-  </section>
-</main>
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
